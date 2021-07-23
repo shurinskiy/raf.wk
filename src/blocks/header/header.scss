@@ -1,0 +1,46 @@
+.header {
+	$self: &;
+
+	&__inner {
+		min-height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		box-sizing: border-box;
+		min-height: 60px;
+		width: 230px;
+		background: url('#{$images-path}icons-sprite.svg#icon-logo-view-black') left center / 62px 60px no-repeat,
+					url('#{$images-path}icons-sprite.svg#icon-fia-view-black') right center / 50px 34px no-repeat transparent;
+		font-family: "RR", sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: inherit;
+		font-size: 10px;
+		line-height: 1.2;
+		padding: 10px 60px 10px 80px;
+	}
+
+	&__search {
+
+	}
+
+	&__search-inp {
+
+	}
+
+	&__search-submit {
+
+	}
+
+	&__socials {
+
+	}
+
+	&__login {
+
+	}
+
+}
