@@ -13,7 +13,7 @@
 		<a href="./" class="header__logo">Российская автомобильная федерация</a>
 		<form action="./" class="header__search">
 			<input class="header__search-inp" type="text" placeholder="Поиск">
-			<input class="header__search-submit" type="submit">
+			<input class="header__search-submit" type="submit" value="">
 		</form>
 		<div class="header__socials socials">
 			<a href="./" class="socials__item socials__item_fb"></a>
@@ -80,10 +80,9 @@
 			<li class="menu__item menu__item_haschild">
 				<span>Федерация</span>
 				<ul class="menu__submenu">
-					<li class="menu__subitem"><a href="./">Lorem ipsum</a></li>
-					<li class="menu__subitem"><a href="./">Dolor amet</a></li>
-					<li class="menu__subitem"><a href="./">Ullam adipisci</a></li>
-					<li class="menu__subitem"><a href="./">Consectetur</a></li>
+					<li class="menu__subitem"><a href="./">Документы</a></li>
+					<li class="menu__subitem"><a href="./">Календари</a></li>
+					<li class="menu__subitem"><a href="./">Контакты</a></li>
 				</ul>
 			</li>
 			<li class="menu__item"><a href="./">Документы</a></li>
@@ -94,16 +93,29 @@
 	</div>
 </nav> 
 <section class="hero">
-	<div class="hero__slider">
-		<div class="hero__slide" style="background-image: url('./images/hero__image-1.png')">
-			<div class="hero__slide-title">Russia wins inaugural FIA Motorsport Games 2021</div>
-			<a class="hero__slide-btn button button_green" href="./">Подробнее</a>
+	<div class="hero__slider swiper-container">
+		<div class="swiper-wrapper">
+			<div class="hero__slide swiper-slide" style="background-image: url('./images/hero__image-1.png')">
+				<div class="hero__slide-content">
+					<div class="hero__slide-title">Russia wins inaugural FIA Motorsport Games 2021</div>
+					<a class="hero__slide-btn button button_green" href="./">Подробнее</a>
+				</div>
+			</div>
+			<div class="hero__slide swiper-slide" style="background-image: url('./images/hero__image-1.png')">
+				<div class="hero__slide-content">
+					<div class="hero__slide-title">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					<a class="hero__slide-btn button button_green" href="./">Подробнее</a>
+				</div>
+			</div>
+			<div class="hero__slide swiper-slide" style="background-image: url('./images/hero__image-1.png')">
+				<div class="hero__slide-content">
+					<div class="hero__slide-title">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+					<a class="hero__slide-btn button button_green" href="./">Подробнее</a>
+				</div>
+			</div>
 		</div>
-		<div class="hero__slide" style="background-image: url('./images/hero__image-1.png')">
-			<div class="hero__slide-title">Lorem ipsum dolor sit amet consectetur adipisicing</div>
-			<a class="hero__slide-btn button button_green" href="./">Подробнее</a>
-		</div>
-	</div>
+	<div class="hero__slider-navi"></div>
+	</div>	
 </section>
 
 
@@ -130,11 +142,11 @@
 			</div>
 			<div class="footer__right-side">
 				<p>Мы в социальных сетях</p>
-				<div class="footer__socials">
-					<a class="footer__social footer__social_fb" href="./"></a>
-					<a class="footer__social footer__social_tw" href="./"></a>
-					<a class="footer__social footer__social_inst" href="./"></a>
-					<a class="footer__social footer__social_yout" href="./"></a>
+				<div class="footer__socials socials socials_footer">
+					<a class="socials__item socials__item_fb" href="./"></a>
+					<a class="socials__item socials__item_tw" href="./"></a>
+					<a class="socials__item socials__item_inst" href="./"></a>
+					<a class="socials__item socials__item_yout" href="./"></a>
 				</div>
 			</div>
 		</div>
@@ -146,7 +158,7 @@
 					<a class="footer__badge-fia" href="./"></a>
 				</div>
 			</div>
-			<button class="footer__scroll-top"></button>
+			<button class="footer__scroll-top">Наверх</button>
 		</div>
 	</div>
 </footer> 

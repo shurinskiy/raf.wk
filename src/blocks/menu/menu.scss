@@ -1,8 +1,23 @@
 .menu {
 	$self: &;
+	display: flex;
+	align-items: center;
+	font-family: "RB", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.04em;
+	color: #fff;
 
 	&__item-first {
-
+		cursor: pointer;
+		width: 50px;
+		height: 32px;
+		border-right: 1px solid #363746;
+		margin-right: 15px;
+		background: url('#{$images-path}icons-sprite.svg#icon-menu-view-white') center left / 18px 14px no-repeat transparent;
+		
+		span {
+			display: none;
+		}
 	}
 
 	&__block {
@@ -10,18 +25,49 @@
 	}
 
 	&__item {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		cursor: pointer;
+		padding: 0 15px;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 
 		&_haschild {
-			
+			position: relative;
+
+			&:hover {
+				border-radius: 5px 5px 0 0;
+				background-color: #fff;
+				color: #14161E;
+
+				#{$self}__submenu {
+					display: block;
+				}
+			}
 		}
 	}
 
 	&__submenu {
-
+		box-sizing: border-box;
+		display: none;
+		position: absolute;
+		z-index: 2;
+		top: 100%;
+		left: 0;
+		background-color: #fff;
+		min-width: 100%;
+		padding: 10px 70px 10px 20px;
+		font-family: "RM", sans-serif;
+		font-size: 16px;
+		letter-spacing: 0.01em;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
 	}
 
 	&__subitem {
-
+		padding: 10px 0;
 	}
-
 }

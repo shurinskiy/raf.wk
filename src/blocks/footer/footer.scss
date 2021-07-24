@@ -1,13 +1,17 @@
 .footer {
 	$self: &;
 	background-color: #1B1D28;
+	color: #fff;
 
 	&__inner {
 
 	}
 
 	&__top {
-
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #3F414A;
+		padding: 40px 0 45px;
 	}
 
 	&__left-side {
@@ -19,11 +23,37 @@
 	}
 
 	&__menu-top {
+		font-family: "RB", sans-serif;
+		font-size: 15px;
+		margin-bottom: 24px;
 
+		a {
+			display: inline-block;
+			text-decoration: none;
+			letter-spacing: 0.03em;
+			color: inherit;
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
 	}
 
 	&__menu-bottom {
+		// font-family: "RT", sans-serif;
+		color: #b8bcbe;
+		font-size: 14px;
+		margin-bottom: 24px;
 
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: inherit;
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
 	}
 
 	&__btn {
@@ -31,58 +61,76 @@
 	}
 
 	&__right-side {
+		text-align: right;
 
+		p {
+			color: #3F414A;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__socials {
-
-	}
-
-	&__social {
-
-		&_fb {
-			
-		}
-
-		&_tw {
-			
-		}
-
-		&_inst {
-			
-		}
-
-		&_yout {
-			
-		}
+		display: inline-flex;
 	}
 
 	&__bottom {
-
+		box-sizing: border-box;
+		min-height: 80px;
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__bottom-side {
-
+		display: flex;
+		align-items: center;
 	}
 
 	&__copyright {
-
+		font-size: 14px;
+		color: #939699;
+		margin: 0 28px 0 0;
 	}
-
+	
 	&__badges {
-
+		height: 32px;
+		display: flex;
+		border-left: 1px solid #3F414A	;
+		margin-right: auto;
 	}
 
 	&__badge-raf {
-
+		width: 33px;
+		height: 32px;
+		background: url('#{$images-path}icons-sprite.svg#icon-logo-view-white') center / 33px 32px no-repeat transparent;
+		margin-left: 25px;
 	}
-
+	
 	&__badge-fia {
-
+		width: 35px;
+		height: 32px;
+		background: url('#{$images-path}icons-sprite.svg#icon-fia-view-white') center / 35px 24px no-repeat transparent;
+		margin-left: 25px;
 	}
 
 	&__scroll-top {
+		@extend %reset-button;
+		font-size: 14px;
+		font-family: "RB", sans-serif;
+		display: flex;
+		align-items: center;
 
+		&::after {
+			box-sizing: border-box;
+			display: inline-block;
+			content: '';
+			height: 40px;
+			width: 40px;
+			border: 1px solid #4B5157;
+			border-radius: 50%;
+			margin-left: 15px;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-white') center / 10px 5px no-repeat transparent;
+		}
 	}
-
 }

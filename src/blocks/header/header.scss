@@ -21,26 +21,43 @@
 		font-size: 10px;
 		line-height: 1.2;
 		padding: 10px 60px 10px 80px;
+		margin-right: 20px;
 	}
 
 	&__search {
-
+		display: flex;
+		justify-content: space-between;
+		height: 40px;
+		width: 300px;
+		border: 1px solid #D9DADB;
+		border-radius: 5px;
+		margin: 0 auto;
 	}
 
 	&__search-inp {
-
+		@extend %reset-input;
+		padding: 5px 15px;
+		font-size: 14px;
+		flex-grow: 1;
+		
+		&::placeholder {
+			color: #c0c0c0;
+		}
 	}
-
+	
 	&__search-submit {
-
+		@extend %reset-button;
+		border-left: 1px solid #D9DADB;
+		width: 50px;
+		background: url('#{$images-path}icons-sprite.svg#icon-zoom-view-dark') center / 17.5px 18px no-repeat transparent;
 	}
 
 	&__socials {
-
+		display: flex;
+		margin: 0 25px;
 	}
 
 	&__login {
 
 	}
-
 }

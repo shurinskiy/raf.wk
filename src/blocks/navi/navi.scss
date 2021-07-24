@@ -1,17 +1,28 @@
 .navi {
 	$self: &;
 	background-color: #1B1D28;
-
+	
 	&__inner {
-
+		box-sizing: border-box;
+		display: flex;
+		height: 54px;
+		padding: 3px 20px 0;
 	}
 
 	&__menu {
-
+		height: 100%;
 	}
-
+	
 	&__fia {
-
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		height: 100%;
+		padding-left: 40px;
+		text-decoration: none;
+		color: #83D8A4;
+		background: url('#{$images-path}icons-sprite.svg#icon-fia-view-white') center left / 31px 21px no-repeat transparent;
+		font-family: "RB", sans-serif;
+		font-size: 14px;
 	}
-
 }

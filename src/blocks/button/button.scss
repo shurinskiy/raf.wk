@@ -1,8 +1,32 @@
 .button {
 	$self: &;
+	@extend %reset-button;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 15px;
+	border-radius: 5px;
+	background-color: #3270CA;
+	color: #fff;
+	font-size: 14px;
+	height: 40px;
+
 
 	&_green {
-		
+		background-color: #83D8A4;
 	}
 
+	&_alarm {
+		padding-left: 42px;
+		background: url('#{$images-path}icons-sprite.svg#icon-megaphone-view-white') center left 14px / 16px 18px no-repeat #E75A52;
+		font-family: "RB", sans-serif;
+		letter-spacing: 1px;
+		font-size: 15px;
+		height: 36px;
+	}
+
+	&_login {
+		padding-left: 42px;
+		background: url('#{$images-path}icons-sprite.svg#icon-user-view-white') center left 14px / 16px 18px no-repeat #3270CA;
+	}
 }
