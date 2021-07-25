@@ -1201,6 +1201,18 @@ eval("(function () {})();//# sourceURL=[module]\n//# sourceMappingURL=data:appli
 
 /***/ }),
 
+/***/ "./src/blocks/news-raf/news-raf.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/news-raf/news-raf.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/core */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper_core__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use([swiper_core__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"]]);\n\n(function () {\n  var swiper = new swiper_core__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.news-raf__slider', {\n    slidesPerView: 4,\n    spaceBetween: 24\n  });\n})();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYmxvY2tzL25ld3MtcmFmL25ld3MtcmFmLmpzPzI1MDIiXSwibmFtZXMiOlsiU3dpcGVyIiwidXNlIiwiTmF2aWdhdGlvbiIsInN3aXBlciIsInNsaWRlc1BlclZpZXciLCJzcGFjZUJldHdlZW4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBQSxtREFBTSxDQUFDQyxHQUFQLENBQVcsQ0FBQ0Msc0RBQUQsQ0FBWDs7QUFFQSxDQUFDLFlBQU07QUFDTixNQUFNQyxNQUFNLEdBQUcsSUFBSUgsbURBQUosQ0FBVyxtQkFBWCxFQUFnQztBQUM5Q0ksaUJBQWEsRUFBRSxDQUQrQjtBQUU5Q0MsZ0JBQVksRUFBRTtBQUZnQyxHQUFoQyxDQUFmO0FBS0EsQ0FORCIsImZpbGUiOiIuL3NyYy9ibG9ja3MvbmV3cy1yYWYvbmV3cy1yYWYuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgU3dpcGVyLCB7IE5hdmlnYXRpb24gfSBmcm9tICdzd2lwZXIvY29yZSc7XG5Td2lwZXIudXNlKFtOYXZpZ2F0aW9uXSk7XG5cbigoKSA9PiB7XG5cdGNvbnN0IHN3aXBlciA9IG5ldyBTd2lwZXIoJy5uZXdzLXJhZl9fc2xpZGVyJywge1xuXHRcdHNsaWRlc1BlclZpZXc6IDQsXG5cdFx0c3BhY2VCZXR3ZWVuOiAyNCxcblx0fSk7XG5cbn0pKCk7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/blocks/news-raf/news-raf.js\n");
+
+/***/ }),
+
 /***/ "./src/js/blocks.js":
 /*!**************************!*\
   !*** ./src/js/blocks.js ***!
@@ -1209,7 +1221,7 @@ eval("(function () {})();//# sourceURL=[module]\n//# sourceMappingURL=data:appli
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_hero_hero_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/hero/hero.js */ \"./src/blocks/hero/hero.js\");\n/* harmony import */ var _blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../blocks/navi/navi.js */ \"./src/blocks/navi/navi.js\");\n/* harmony import */ var _blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1__);\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYmxvY2tzLmpzPzVlM2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSIsImZpbGUiOiIuL3NyYy9qcy9ibG9ja3MuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgXCIuLi9ibG9ja3MvaGVyby9oZXJvLmpzXCI7XHJcbmltcG9ydCBcIi4uL2Jsb2Nrcy9uYXZpL25hdmkuanNcIjsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/blocks.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_hero_hero_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/hero/hero.js */ \"./src/blocks/hero/hero.js\");\n/* harmony import */ var _blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../blocks/navi/navi.js */ \"./src/blocks/navi/navi.js\");\n/* harmony import */ var _blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_navi_navi_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _blocks_news_raf_news_raf_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../blocks/news-raf/news-raf.js */ \"./src/blocks/news-raf/news-raf.js\");\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYmxvY2tzLmpzPzVlM2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0EiLCJmaWxlIjoiLi9zcmMvanMvYmxvY2tzLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwiLi4vYmxvY2tzL2hlcm8vaGVyby5qc1wiO1xyXG5pbXBvcnQgXCIuLi9ibG9ja3MvbmF2aS9uYXZpLmpzXCI7XHJcbmltcG9ydCBcIi4uL2Jsb2Nrcy9uZXdzLXJhZi9uZXdzLXJhZi5qc1wiOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/blocks.js\n");
 
 /***/ }),
 

@@ -1,0 +1,28 @@
+.tags {
+	$self: &;
+	display: flex;
+	margin-bottom: 16px;
+
+	&__item {
+		display: inline-block;
+		border: 1px solid #D9DADB;
+		border-radius: 5px;
+		font-size: 14px;
+		text-decoration: none;
+		color: #595B62;
+		padding: 10px 10px 10px 44px;
+		margin: 0 12px 14px 0;
+
+		&_license {
+			background: url('#{$images-path}icons-sprite.svg#icon-license-view-green') center left 10px / 24px 24px no-repeat transparent;
+		}
+
+		&_flag {
+			background: url('#{$images-path}icons-sprite.svg#icon-flag-view-green') center left 10px / 24px 24px no-repeat transparent;
+		}
+
+		&_orders {
+			background: url('#{$images-path}icons-sprite.svg#icon-orders-view-green') center left 10px / 24px 24px no-repeat transparent;
+		}
+	}
+}

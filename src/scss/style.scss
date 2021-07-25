@@ -35,6 +35,10 @@ $breakpoints: (
 	// "../../node_modules/animate-scss/_zooming-exits/zooming-exits.scss",
 	"../../node_modules/animate-scss/_zooming-entrances/zooming-entrances.scss";
 
+
+// Import swiper slider
+@import "../../node_modules/swiper/swiper.scss";
+
 // Include fonts
 @include font-face("Roboto-Regular", "RR");
 @include font-face("Roboto-Light", "RL");

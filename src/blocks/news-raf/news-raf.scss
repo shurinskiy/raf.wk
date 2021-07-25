@@ -1,0 +1,40 @@
+.news-raf {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+
+	&__top-title {
+		color: #14161E;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: "RBL", sans-serif;
+	}
+
+	&__all {
+		color: #3270CA;
+		font-size: 15px;
+		font-family: "RM", sans-serif;
+		text-decoration: none;
+	}
+
+	&__slider {
+		box-sizing: border-box;
+		padding: 20px;
+		margin: 0 -20px;
+		
+		.swiper-wrapper {
+			// display: grid;
+			// grid-template: auto / repeat(auto-fit, minmax(280px, auto));
+			// grid-gap: 24px;
+		}
+	}
+
+	&__item {
+
+	}
+}
