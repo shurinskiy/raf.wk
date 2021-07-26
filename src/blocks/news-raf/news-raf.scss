@@ -37,4 +37,29 @@
 	&__item {
 
 	}
+
+	&__btn-next {
+		box-sizing: border-box;
+		display: block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+		cursor: pointer;
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 0.3s linear, visibility 0s linear;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-black') center / 5px 9px no-repeat #fff;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 1;
+		transform: translateY(-50%);
+		
+		&_disabled {
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.3s linear, visibility 0s linear 0.3s;
+		}
+	}
 }
