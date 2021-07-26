@@ -54,18 +54,29 @@
 	}
 
 	&__info {
+		display: flex;
 		margin-top: auto;
-	}
-
-	&__info-date {
 		color: #939699;
 		min-height: 20px;
 		font-size: 12px;
+	}
 
+	&__info-date {
 		&_time {
 			padding-left: 30px;
 			background: url('#{$images-path}icons-sprite.svg#icon-clock-view-grey') center left / 20px 20px no-repeat transparent;
 		}
 	}
-
+	
+	&__info-comments {
+		padding-left: 22px;
+		background: url('#{$images-path}icons-sprite.svg#icon-msg-view-grey') center left / 16px 15px no-repeat transparent;
+		margin-right: 12px;
+	}
+	
+	&__info-likes {
+		padding-left: 22px;
+		background: url('#{$images-path}icons-sprite.svg#icon-fav-view-grey') center left / 16px 15px no-repeat transparent;
+		margin-right: 12px;
+	}
 }

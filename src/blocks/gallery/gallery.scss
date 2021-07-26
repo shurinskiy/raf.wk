@@ -1,0 +1,78 @@
+.gallery {
+	$self: &;
+	margin-bottom: 70px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+
+	&__top-title {
+		color: #14161E;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: "RBL", sans-serif;
+	}
+
+	&__all {
+		color: #3270CA;
+		font-size: 15px;
+		font-family: "RM", sans-serif;
+		text-decoration: none;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: repeat(3, 180px);
+		grid-gap: 5px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__item {
+		position: relative;
+
+		&_big {
+			grid-area: 1 / 1 / span 3 / 2;
+
+			#{$self}__count {
+				display: block;
+			}			
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__bottom {
+		box-sizing: border-box;
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+		padding: 0 35px;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__title {
+
+	}
+	
+	&__count {
+		display: none;
+		padding: 13px 20px 13px 45px;
+		border-radius: 50px;
+		font-size: 14px;
+		line-height: 1.1;
+		background: url('#{$images-path}icons-sprite.svg#icon-pic-view-white') center left 15px / 19px 15px no-repeat #83D8A4;
+	}
+}

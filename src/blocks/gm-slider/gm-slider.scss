@@ -1,16 +1,42 @@
 .gm-slider {
 	$self: &;
+	height: 570px;
+	border-radius: 10px;
 
 	&__item {
-
+		box-sizing: border-box;
+		text-align: center;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 50px 40px 20px;
 	}
 
 	&__badge {
+		margin-bottom: 40px;
 
+		img {
+			display: block;
+			margin: 0 auto 10px;
+		}
+		
+		span {
+			color: #fff;
+			font-size: 14px;
+			display: block;
+		}
 	}
 
 	&__title {
-
+		display: block;
+		max-width: 490px;
+		font-family: "RB", sans-serif;
+		font-size: 35px;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1.2;
+		margin: 0 auto 25px;
 	}
 
 	&__btn {
@@ -18,7 +44,30 @@
 	}
 
 	&__navi {
-
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 150px;
+		width: 100%;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding-bottom: 25px;
+		background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%)
 	}
 
+	&__dot {
+		display: block;
+		width: 8px;
+		height: 8px;
+		margin: 0 10px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+
+		&_active {
+			background-color: #fff;
+		}
+	}
 }

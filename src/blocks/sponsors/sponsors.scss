@@ -1,0 +1,30 @@
+.sponsors {
+	$self: &;
+	margin-bottom: 80px;
+
+	&__title {
+		color: #14161E;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: "RBL", sans-serif;
+		margin-bottom: 25px;
+	}
+
+	&__items {
+		border-left: 1px solid #E8E8E8;
+		border-top: 1px solid #E8E8E8;
+		display: grid;
+		grid-template: 120px / repeat(auto-fit, minmax(230px, auto));
+		grid-auto-rows: 120px;
+	}
+
+	&__item {
+		box-sizing: border-box;
+		border-right: 1px solid #E8E8E8;
+		border-bottom: 1px solid #E8E8E8;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
