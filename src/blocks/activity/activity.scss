@@ -1,0 +1,34 @@
+.activity {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+
+	&__top-title {
+		color: #14161E;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: "RBL", sans-serif;
+	}
+
+	&__all {
+		color: #3270CA;
+		font-size: 15px;
+		font-family: "RM", sans-serif;
+		text-decoration: none;
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+	}
+
+	&__item {
+
+	}
+}

@@ -1,0 +1,68 @@
+.games {
+	$self: &;
+	margin-bottom: 40px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+
+	&__top-title {
+		color: #14161E;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: "RBL", sans-serif;
+	}
+
+	&__all {
+		color: #3270CA;
+		font-size: 15px;
+		font-family: "RM", sans-serif;
+		text-decoration: none;
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr );
+		grid-gap: 20px;
+	}
+
+	&__slider {
+
+	}
+	
+	&__side {
+		border: 1px solid #ECECEC;
+		border-radius: 10px;
+		padding: 24px;
+	}
+
+	&__side-title {
+
+	}
+
+	&__item {
+
+		&_video {
+			
+		}
+	}
+
+	&__video {
+
+	}
+
+	&__video-brief {
+
+	}
+
+	&__item-title {
+
+	}
+
+	&__item-date {
+
+	}
+
+}
