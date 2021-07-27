@@ -63,11 +63,13 @@
 
 	&__video {
 		box-sizing: border-box;
-		width: 50%;
+		width: 270px;
+		min-height: 125px;
+		flex-shrink: 0;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		@include aspect-ratio(2.15, 1);
+		position: relative;
 		cursor: pointer;
 
 		&::after {
@@ -88,7 +90,7 @@
 	
 	&__video-brief {
 		box-sizing: border-box;
-		width: 50%;
+		flex-grow: 1;
 		font-family: "RM", sans-serif;
 		color: #262D33;
 		font-size: 16px;

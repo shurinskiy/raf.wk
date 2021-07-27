@@ -11,11 +11,15 @@
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 1px solid #3F414A;
-		padding: 40px 0 45px;
+		padding: 40px 0 0;
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__left-side {
-
+		margin-bottom: 45px;
 	}
 
 	&__menu {
@@ -25,7 +29,8 @@
 	&__menu-top {
 		font-family: "RB", sans-serif;
 		font-size: 15px;
-		margin-bottom: 24px;
+		line-height: 2.0;
+		margin-bottom: 20px;
 
 		a {
 			display: inline-block;
@@ -44,6 +49,7 @@
 		color: #b8bcbe;
 		font-size: 14px;
 		margin-bottom: 24px;
+		line-height: 2.0;
 
 		a {
 			display: inline-block;
@@ -62,10 +68,25 @@
 
 	&__right-side {
 		text-align: right;
-
-		p {
+		flex-shrink: 0;
+		margin-bottom: 45px;
+		
+		p:first-child {
 			color: #3F414A;
 			margin-bottom: 20px;
+		}
+		
+		@include media('<=xs') {
+			text-align: left;
+			flex-shrink: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+			p:first-child {
+				margin: 0 20px 0 0;
+				padding: 5px 0;
+			}
 		}
 	}
 
@@ -85,6 +106,7 @@
 	&__bottom-side {
 		display: flex;
 		align-items: center;
+		width: 100%;
 	}
 
 	&__copyright {
@@ -98,6 +120,11 @@
 		display: flex;
 		border-left: 1px solid #3F414A	;
 		margin-right: auto;
+
+		@include media('<=xs') {
+			margin: 0 0 0 auto;
+			border: none;
+		}
 	}
 
 	&__badge-raf {
@@ -119,7 +146,12 @@
 		font-size: 14px;
 		font-family: "RB", sans-serif;
 		display: flex;
+		flex-shrink: 0;
 		align-items: center;
+
+		@include media('<=xs') {
+			display: none;
+		}
 
 		&::after {
 			box-sizing: border-box;

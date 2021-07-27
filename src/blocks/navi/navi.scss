@@ -1,6 +1,7 @@
 .navi {
 	$self: &;
 	background-color: #1B1D28;
+	position: relative;
 	
 	&__inner {
 		box-sizing: border-box;
