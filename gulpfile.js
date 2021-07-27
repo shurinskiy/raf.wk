@@ -140,6 +140,7 @@ function icons() {
 			dark: '#595B62',
 			grey: '#BCBFC2',
 			green: '#83D8A4',
+			blue: '#3270CA',
 			white: '#ffffff'
 		}
 	}))

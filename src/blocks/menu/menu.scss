@@ -25,6 +25,11 @@
 		}
 
 		&:hover {
+			
+			&::before {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-menu-view-blue');
+			}
+
 			#{$self}__block {
 				display: block;
 			}
@@ -48,6 +53,10 @@
 		a {
 			text-decoration: none;
 			color: inherit;
+		}
+
+		&:hover > a {
+			color: #3270CA;
 		}
 
 		&_haschild {

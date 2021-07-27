@@ -37,17 +37,29 @@
 
 			&:hover { color: #3270CA; }
 		}
+
+		&:first-child #{$self}__side {
+			display: flex;
+		}
 	}
 
 	&__side {
-		// @include outline();
 		box-sizing: border-box;
 		position: absolute;
 		top: 0;
 		right: 20px;
 		width: calc(100% - 235px);
 		height: 100%;
-		display: flex;
+		display: none;
+		@keyframes side_fade {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		animation: side_fade 0.4s ease;
+
+		@include media('<=sm') {
+			display: none !important;
+		}
 	}
 
 	&__side-links {
@@ -55,6 +67,10 @@
 		width: 28%;
 		max-width: 300px;
 		padding-right: 16px;
+		
+		@include media('<=md') {
+			width: 35%;
+		}
 
 		> a {
 			font-size: 14px;
@@ -73,9 +89,19 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr );
 		grid-gap: 20px;
+		
+		@include media('<=md') {
+			grid-template-columns: repeat(2, 1fr );
+			width: 65%;
+		}
 	}
 
 	&__card {
 
+		@include media('<=md') {
+			&:nth-last-child(1) {
+				display: none;
+			}
+		}
 	}
 }
