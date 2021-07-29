@@ -29,17 +29,40 @@
 		grid-gap: 5px;
 		border-radius: 10px;
 		overflow: hidden;
+		
+		@include media('<=md') {
+			grid-template-columns: 3fr 240px;
+		}
+		
+		@include media('<=sm') {
+			grid-template: 270px / repeat(4, 350px);
+			border-radius: 0;
+			overflow: auto;
+		}
 	}
 
 	&__item {
 		position: relative;
-
-		&_big {
-			grid-area: 1 / 1 / span 3 / 2;
+			
+		@include media('<=sm') {
+			border-radius: 10px;
+			overflow: hidden;
 
 			#{$self}__count {
 				display: block;
 			}			
+		}
+
+		&_big {
+			grid-area: 1 / 1 / span 3 / 2;
+			
+			#{$self}__count {
+				display: block;
+			}			
+			
+			@include media('<=sm') {
+				grid-area: auto;
+			}
 		}
 
 		img {

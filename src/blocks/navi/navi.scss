@@ -2,16 +2,53 @@
 	$self: &;
 	background-color: #1B1D28;
 	position: relative;
+
+	@include media('<=sm') {
+		box-sizing: border-box;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		position: fixed;
+		height: 100vh;
+		z-index: 11;
+		right: -500px; top: 0;
+		max-width: 500px;
+		width: 100%;
+		padding: 100px 0 30px;
+		background-color: #fff;
+		box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
+		transition: right 0.3s ease-in;
+	}
+
+	&.opened {
+		right: 0;
+	}
 	
 	&__inner {
 		box-sizing: border-box;
-		display: flex;
-		height: 54px;
-		padding: 3px 20px 0;
+		
+		@include media('>=sm') {
+			display: flex;
+			height: 54px;
+			padding: 3px 20px 0;
+		}
+
+		@include media('<=sm') {
+			overflow: auto;
+			padding: 0;
+		}
 	}
 
-	&__menu {
+	&__menu-1 {
+
+	}
+
+	&__menu-2 {
 		height: 100%;
+
+		@include media('<=sm') {
+			height: auto;
+		}
 	}
 	
 	&__fia {
@@ -27,5 +64,76 @@
 		font-size: 14px;
 		line-height: 1.1;
 		text-align: center;
+
+		@include media('<=sm') {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-fia-view-black');
+			height: 30px;
+			margin: 0 0 35px 30px;
+		}
+	}
+
+	&__search {
+		display: none;
+		height: 44px;
+		border: 1px solid #D9DADB;
+		border-radius: 22px;
+		overflow: hidden;
+		background-color: #fff;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		
+		@include media('<=sm') {
+			display: inline-flex;
+		}
+	}
+	
+	&__search-submit {
+		@extend %reset-button;
+		width: 44px;
+		height: 44px;
+		background: url('#{$images-path}icons-sprite.svg#icon-zoom-view-dark') center / 17.5px 18px no-repeat #fff;
+		pointer-events: painted;
+		position: absolute;
+		right: 0;
+
+		&:focus ~ #{$self}__search-inp {
+			width: 220px;
+		}
+	}
+	
+	&__search-inp {
+		@extend %reset-input;
+		padding: 5px 20px 5px 15px;
+		transition: width 0.3s ease;
+		font-size: 14px;
+		width: 44px;
+		
+		&::placeholder {
+			color: #c0c0c0;
+		}
+
+		&:focus {
+			width: 220px;
+		}
+	}
+
+	&__socials {
+		display: none !important;
+		margin: 0 0 35px 25px;
+
+		@include media('<=sm') {
+			display: flex !important;	
+		}
+	}
+	
+	&__login {
+		display: none;
+		width: calc(100% - 60px);
+		margin: 0 auto;
+
+		@include media('<=sm') {
+			display: flex;
+		}
 	}
 }

@@ -26,6 +26,11 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 20px;
+		
+		@include media('<=sm') {
+			overflow: auto;
+			grid-template-columns: repeat(4, 250px);
+		}
 	}
 
 	&__item {

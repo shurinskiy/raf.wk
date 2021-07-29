@@ -11,69 +11,88 @@
 			<a href="./" class="socials__item socials__item_tw"></a>
 		</div>
 		<a class="header__login button button_login" href="./">Личный кабинет</a>
+		<button class="header__toggle-btn button button_toggle"></button>
 	</div>
 </header>
 
 <nav class="navi">
-	<div class="container navi__inner">
-		<ul class="navi__menu menu">
-			<li class="menu__item-first">
-				<span>Дисциплины</span>
-				<div class="menu__block menu-block">
-					<div class="container menu-block__inner">
-						<ul class="menu-block__items">
-							<li class="menu-block__item">
-								<a href="./">Ралли</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Кольцевые гонки</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Трек и лед</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Ралли-рейды</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Трофи-рейды</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Картинг</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Дрэг-рейсинг</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Дрифт</a>
-								@@include("_blockside.html")
-							</li>
-							<li class="menu-block__item">
-								<a href="./">Автомногоборье</a>
-								@@include("_blockside.html")
-							</li>
-						</ul>
-					</div>
+	<div class="container navi__inner" data-scroll-lock-scrollable>
+		<form action="./" class="navi__search">
+			<input class="navi__search-submit" type="submit" value="">
+			<input class="navi__search-inp" type="text" placeholder="Поиск">
+		</form>
+		<div class="navi__menu-1 menu-1 opened">
+			<span>Дисциплины</span>
+			<div class="menu-1__outer opened">
+				<div class="container menu-1__inner">
+					<ul class="menu-1__items">
+						<li class="menu-1__item">
+							<a href="./">Ралли</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Кольцевые гонки</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Трек и лед</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Ралли-рейды</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Трофи-рейды</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Картинг</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Дрэг-рейсинг</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Дрифт</a>
+							@@include("_menuside.html")
+						</li>
+						<li class="menu-1__item">
+							<a href="./">Автомногоборье</a>
+							@@include("_menuside.html")
+						</li>
+					</ul>
 				</div>
-			</li>
-			<li class="menu__item menu__item_haschild">
-				<span>Федерация</span>
-				<ul class="menu__submenu">
-					<li class="menu__subitem"><a href="./">Документы</a></li>
-					<li class="menu__subitem"><a href="./">Календари</a></li>
-					<li class="menu__subitem"><a href="./">Контакты</a></li>
+			</div>
+		</div>
+		<ul class="navi__menu-2 menu-2">
+			<li class="menu-2__item menu-2__item_haschild opened">
+				<a href="./">Федерация</a>
+				<ul class="menu-2__submenu opened">
+					<li class="menu-2__subitem"><a href="./">Документы</a></li>
+					<li class="menu-2__subitem"><a href="./">Календари</a></li>
+					<li class="menu-2__subitem"><a href="./">Контакты</a></li>
 				</ul>
 			</li>
-			<li class="menu__item"><a href="./">Документы</a></li>
-			<li class="menu__item"><a href="./">Календари</a></li>
-			<li class="menu__item"><a href="./">Контакты</a></li>
+			<li class="menu-2__item menu-2__item_haschild opened">
+				<a href="./">Документы</a>
+				<ul class="menu-2__submenu opened">
+					<li class="menu-2__subitem"><a href="./">Adipisicing</a></li>
+					<li class="menu-2__subitem"><a href="./">Consectetur</a></li>
+					<li class="menu-2__subitem"><a href="./">Quibusdam</a></li>
+				</ul>
+			</li>
+			<li class="menu-2__item"><a href="./">Календари</a></li>
+			<li class="menu-2__item"><a href="./">Контакты</a></li>
 		</ul>
 		<a class="navi__fia" href="./">FIA Motorsport Games 2021</a>
+		<div class="navi__socials socials">
+			<a href="./" class="socials__item socials__item_fb"></a>
+			<a href="./" class="socials__item socials__item_inst"></a>
+			<a href="./" class="socials__item socials__item_tw"></a>
+		</div>
+		<a class="navi__login button button_login" href="./">Личный кабинет</a>
+
 	</div>
 </nav>

@@ -28,5 +28,16 @@
 	&_login {
 		padding-left: 42px;
 		background: url('#{$images-path}icons-sprite.svg#icon-user-view-white') center left 14px / 16px 18px no-repeat #3270CA;
+		justify-content: flex-start;
+	}
+
+	&_toggle {
+		width: 45px;
+		background: url('#{$images-path}icons-sprite.svg#icon-hamburger-view-white') center / 19px 14px no-repeat #3270CA;
+
+		&.opened {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-close-view-white');
+			background-size: 15px 15px;
+		}
 	}
 }

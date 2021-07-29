@@ -57,15 +57,31 @@
 	}
 
 	&__socials {
-		display: flex;
 		margin: 0 25px;
 
 		@include media('<=md') {
 			margin-left: auto;
 		}
+
+		@include media('<=sm') {
+			display: none !important;
+		}
 	}
 
 	&__login {
+		@include media('<=sm') {
+			display: none;
+		}
+	}
 
+	&__toggle-btn {
+		display: none;
+		flex-shrink: 0;
+
+		@include media('<=sm') {
+			display: block;
+			position: relative;
+			z-index: 12;
+		}
 	}
 }
