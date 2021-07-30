@@ -25,20 +25,9 @@
 		border: 1px solid #c0c0c0;
 		border-radius: 50%;
 
-		&_fb {
-			background: url('#{$images-path}icons-sprite.svg#icon-soc_fb-view-dark') center / 10px 18px no-repeat transparent;
-		}
-		
-		&_inst {
-			background: url('#{$images-path}icons-sprite.svg#icon-soc_inst-view-dark') center / 17px 17px no-repeat transparent;
-		}
-		
-		&_tw {
-			background: url('#{$images-path}icons-sprite.svg#icon-soc_tw-view-dark') center / 18px 15px no-repeat transparent;
-		}
-		
-		&_yout {
-			background: url('#{$images-path}icons-sprite.svg#icon-soc_yout-view-dark') center / 18px 14px no-repeat transparent;
-		}
+		&_fb { background: url('#{$images-path}icons-sprite.svg#icon-soc_fb-view-dark') center / 10px 18px no-repeat transparent; }
+		&_inst { background: url('#{$images-path}icons-sprite.svg#icon-soc_inst-view-dark') center / 17px 17px no-repeat transparent; }
+		&_tw { background: url('#{$images-path}icons-sprite.svg#icon-soc_tw-view-dark') center / 18px 15px no-repeat transparent; }
+		&_yout { background: url('#{$images-path}icons-sprite.svg#icon-soc_yout-view-dark') center / 18px 14px no-repeat transparent; }
 	}
 }

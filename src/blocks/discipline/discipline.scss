@@ -20,11 +20,22 @@
 		font-size: 15px;
 		font-family: "RM", sans-serif;
 		text-decoration: none;
+			
+		@include media('<=sm') {
+			display: none;
+		}
 	}
 
 	&__items {
-		display: grid;
-		grid-template: auto / repeat(auto-fit, minmax(150px, auto));
+		// display: grid;
+		// grid-template: auto / repeat(auto-fit, minmax(150px, auto));
+		display: flex;
+		flex-flow: row wrap;
+
+		@include media('<=sm') {
+			flex-wrap: nowrap;
+			overflow: auto;
+		}
 	}
 
 	&__item {
@@ -34,6 +45,25 @@
 		padding: 20px;
 		border-radius: 10px;
 		transition: box-shadow 0.3s ease;
+		max-width: 150px;
+		width: calc(100% / 8);
+
+		&:nth-last-child(-n + 3) {
+			display: none;
+		}
+		
+		@include media('<=md') {
+			width: calc(100% / 6);
+
+			&:nth-last-child(-n + 5) {
+				display: none;
+			}
+		}
+		
+		@include media('<=sm') {
+			width: auto;
+			display: block !important;
+		}
 
 		&:hover {
 			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
