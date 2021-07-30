@@ -3,6 +3,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 (() => {
 	let $shell = $('.navi');
 	let $toggle = $('.header__toggle-btn');
+	let $submenu = $shell.find('[class$=__submenu]');
+	let $links = $shell.find('.menu-1').add('.menu-2__item_haschild');
 
 	$toggle.on('click', function(e) {
 		e.preventDefault();
@@ -11,7 +13,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 		$shell.toggleClass('opened');
 
 		if($shell.hasClass('opened')) {
-			// $menu.removeAttr('style');
+			$submenu.removeAttr('style');
+			$links.removeClass('opened');
 			disablePageScroll();
 			return;
 		}
@@ -24,7 +27,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 			e.preventDefault();
 			$toggle.toggleClass('opened');
 			$shell.toggleClass('opened');
-			// $menu.removeAttr('style');
+			$submenu.removeAttr('style');
+			$links.removeClass('opened');
 			enablePageScroll();
 		}
 	});

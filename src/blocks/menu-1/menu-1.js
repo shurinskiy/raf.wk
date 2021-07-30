@@ -3,7 +3,7 @@
 	$('.menu-1__item').on('mouseover', function(e) {
 		let $self = $(this);
 
-		if ($self.parents('.menu-1__inner').css('position') == 'relative') {
+		if ($self.parents('.menu-1__wrapper').css('position') == 'relative') {
 			$self
 				.parent()
 				.find('.menu-1__side')

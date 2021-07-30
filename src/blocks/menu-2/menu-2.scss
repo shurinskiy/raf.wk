@@ -35,6 +35,8 @@
 
 			&.opened {
 				background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-grey');
+				
+				> a { color: #3270CA; }
 			}
 		}
 
@@ -92,12 +94,13 @@
 		}
 
 		@include media('<=sm') {
+			display: none;
 			font-size: 14px;
 			padding: 20px 0 0;
 			
-			&.opened {
+			/* &.opened {
 				display: block;
-			}
+			} */
 		}
 	}
 
