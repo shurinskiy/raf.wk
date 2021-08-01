@@ -1,0 +1,26 @@
+.p-tags {
+	$self: &;
+	margin-bottom: 25px;
+
+	&__inner {
+		display: flex;
+		grid-gap: 10px;
+		overflow: auto;
+	}
+
+	&__item {
+		padding: 10px 16px;
+		white-space: nowrap;
+		border: 1px solid #D9DADB;
+		border-radius: 25px;
+		text-decoration: none;
+		color: inherit;
+		font-size: 14px;
+		line-height: 1.3;
+
+		&.active {
+			color: #fff;
+			background-color: #3270CA;
+		}
+	}
+}

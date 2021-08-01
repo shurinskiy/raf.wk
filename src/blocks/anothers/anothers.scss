@@ -1,4 +1,4 @@
-.activity {
+.anothers {
 	$self: &;
 	margin-bottom: 50px;
 
@@ -34,6 +34,8 @@
 	}
 
 	&__item {
-
+		&.card {
+			min-height: 380px;
+		}
 	}
 }

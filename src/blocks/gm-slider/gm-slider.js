@@ -3,6 +3,8 @@ Swiper.use([Pagination]);
 
 (() => {
 	const swiper = new Swiper('.gm-slider', {
+		loop: true,
+
 		pagination: {
 			el: '.gm-slider__navi',
 			clickable: true,

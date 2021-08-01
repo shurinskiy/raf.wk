@@ -3,6 +3,7 @@ Swiper.use([Pagination]);
 
 (() => {
 	const swiper = new Swiper('.hero__slider', {
+		loop: true,
 		pagination: {
 			el: '.hero__slider-navi',
 			clickable: true,

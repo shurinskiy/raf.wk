@@ -1,4 +1,4 @@
-.news {
+.h-news {
 	$self: &;
 	margin-bottom: 25px;
 
@@ -62,7 +62,9 @@
 	}
 
 	&__item {
-
+		&.card {
+			min-height: 380px;
+		}
 	}
 
 	&__btn-next {

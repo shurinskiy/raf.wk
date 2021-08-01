@@ -16,6 +16,11 @@
 		display: grid;
 		grid-template: 120px / repeat(auto-fit, minmax(230px, auto));
 		grid-auto-rows: 120px;
+		
+		@include media('<=xs') {
+			grid-template: 80px / repeat(auto-fit, minmax(150px, auto));
+			grid-auto-rows: 80px;
+		}
 	}
 
 	&__item {
@@ -26,5 +31,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		img { max-height: 100%; }
 	}
 }

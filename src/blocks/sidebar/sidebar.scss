@@ -1,0 +1,31 @@
+.sidebar {
+	$self: &;
+	border: 1px solid #ECECEC;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 24px;
+
+	&__item {
+		padding-bottom: 16px;
+		margin-bottom: 16px;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #D9DADB;
+		}
+	}
+
+	&__text {
+		font-family: "RM", sans-serif;
+		font-size: 16px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	&__date {
+		color: #939699;
+		font-size: 12px;
+	}
+
+}

@@ -1,7 +1,6 @@
 .card {
 	$self: &;
 	box-sizing: border-box;
-	min-height: 380px;
 	border: 1px solid #ECECEC;
 	border-radius: 10px;
 	overflow: hidden;
@@ -14,7 +13,49 @@
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 	}
 
+	&_video {
+		position: relative;
+		display: block;
+		padding: 0;
+	
+		#{$self}__image {
+			height: 100%;
+			margin: 0;
+		}
+		
+		#{$self}__info {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+			text-decoration: none;
+		}
+
+		#{$self}__info-video {
+			font-family: "RBL", sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			
+			&::before {
+				display: block;
+				content: '';
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				flex-shrink: 0;
+				margin-right: 10px;
+				background: url('#{$images-path}icons-sprite.svg#icon-play-view-white') center left 15px / 15px 18px no-repeat #3270CA;
+			}
+		}
+	}
+	
 	&__image {
+		box-sizing: border-box;
 		height: 150px;
 		margin: 0 -20px 20px;
 
@@ -33,17 +74,11 @@
 		line-height: 1.1;
 		margin-bottom: 6px;
 
-		&_lilack {
-			color: #AC8EE3;
-		}
+		&_lilack { color: #AC8EE3; }
 		
-		&_green {
-			color: #83D8A4;
-		}
+		&_green { color: #83D8A4; }
 		
-		&_blue {
-			color: #4592FF;
-		}
+		&_blue { color: #4592FF; }
 	}
 
 	&__brief {
@@ -54,10 +89,11 @@
 	}
 
 	&__info {
+		box-sizing: border-box;
 		display: flex;
 		margin-top: auto;
-		color: #939699;
 		min-height: 20px;
+		color: #939699;
 		font-size: 12px;
 	}
 
