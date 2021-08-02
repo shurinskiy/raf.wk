@@ -1,0 +1,75 @@
+.f-card {
+	$self: &;
+	box-sizing: border-box;
+	border: 1px solid #ECECEC;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 24px;
+	transition: box-shadow 0.3s ease;
+
+	&_nomodal {
+
+		#{$self}__avatar {
+			display: block;	
+		}
+
+		#{$self}__image {
+			display: none;
+		}
+
+		#{$self}__name {
+			font-size: 16px;
+		}
+
+		#{$self}__text {
+			display: none;
+		}
+	}
+
+	&__avatar {
+		display: none;
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+		border-radius: 50%;
+		background-color: #F0F0F0;
+		margin-bottom: 25px;
+		cursor: pointer;
+	}
+
+	&__image {
+		margin-bottom: 25px;
+	}
+
+	&__name {
+		font-family: "RM", sans-serif;
+		font-size: 18px;
+		line-height: 1.2;
+		margin-bottom: 5px;
+	}
+
+	&__position {
+		color: #595B62;
+	}
+
+	&__text {
+		padding: 30px 0;
+	}
+
+	&__contacts {
+		margin: auto 0 25px;
+	}
+
+	&__contact {
+		span {
+			font-family: "RB", sans-serif;
+		}
+	}
+
+	&__btn {
+		align-self: flex-start;
+	}
+
+}

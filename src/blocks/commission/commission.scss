@@ -1,0 +1,60 @@
+.commission {
+	$self: &;
+	margin-bottom: 100px;
+
+	&__title {
+		font-family: "RB", sans-serif;
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	
+	&__items {
+		box-sizing: border-box;
+		border: 1px solid #ECECEC;
+		border-radius: 10px;
+		padding: 24px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		
+		@include media('<=md') {
+			flex-wrap: wrap;
+	
+			&:not(:last-child) {
+				padding-bottom: 30px;
+				border-bottom: 1px solid #ECECEC;
+			}
+		}
+	}
+
+	&__item-title {
+		margin-right: auto;
+		font-family: "RM", sans-serif;
+		line-height: 1.2;
+
+		@include media('<=md') {
+			width: 100%;
+			margin: 0 0 3px 0;
+		}
+	}
+
+	&__name {
+		margin: 0 50px 0 20px;
+		
+		@include media('<=md') {
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+
+	&__btn {
+		flex-shrink: 0;
+	}
+}
