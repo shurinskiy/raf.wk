@@ -1,0 +1,146 @@
+.docs {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__set {
+		box-sizing: border-box;
+		border: 1px solid #ECECEC;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		padding: 20px;
+		transition: box-shadow 0.3s ease;
+
+		&.opened {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+			
+			#{$self}__title::after {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-grey');
+			}
+		}
+	}
+
+	&__title {
+		font-family: "RB", sans-serif;
+		font-size: 20px;
+		line-height: 1.1;
+		padding-left: 40px;
+		min-height: 24px;
+		background: url('#{$images-path}icons-sprite.svg#icon-bag-view-grey') center left / 24px 24px no-repeat transparent;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&::after {
+			display: block;
+			flex-shrink: 0;
+			content: '';
+			width: 36px;
+			height: 36px;
+			border-radius: 6px;
+			border: 1px solid #D4D4D4;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') center / 18px 10px no-repeat transparent;
+			margin-left: 15px;
+		}
+	}
+
+	&__hidden {
+		display: none;
+		padding-top: 25px;
+	}
+
+	&__item {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		border: 1px solid #ECECEC;
+		border-radius: 10px;
+		padding: 15px;
+		margin-bottom: 10px;
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+			padding-bottom: 5px;
+		}
+	}
+
+	&__name {
+		box-sizing: border-box;
+		margin-right: auto;
+		font-family: "RM", sans-serif;
+		font-size: 16px;
+		line-height: 1.1;
+		padding: 3px 0 3px 40px;
+		background: url('#{$images-path}icons-sprite.svg#icon-doc-view-green') center left / 24px 25px no-repeat transparent;
+
+		@include media('<=xs') {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__type {
+		display: block;
+		width: 43px;
+		flex-shrink: 0;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.0;
+		text-transform: uppercase;
+		padding: 9px 0;
+		border-radius: 30px;
+		margin: 0 18px 0 15px;
+
+		@include media('<=xs') {
+			margin: 0 15px 10px 0;
+		}
+
+		&_pdf { background-color: #E8E7FF; }
+		
+		&_doc { background-color: #E7F6FF; }
+		
+		&_xml { background-color: #DEF8D6; }
+	}
+
+	&__size {
+		color: #595B62;
+		min-width: 50px;
+		margin-right: 50px;
+
+		@include media('<=md') {
+			margin-right: 20px;
+		}
+
+		@include media('<=xs') {
+			margin: 0 15px 10px 0;
+		}
+	}
+	
+	&__date {
+		color: #595B62;
+		min-width: 125px;
+		margin-right: 50px;
+
+		@include media('<=md') {
+			margin-right: 20px;
+		}
+
+		@include media('<=xs') {
+			margin: 0 15px 10px 0;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 1.3;
+		color: #3270CA;
+		text-decoration: none;
+		padding-left: 20px;
+		background: url('#{$images-path}icons-sprite.svg#icon-download-view-grey') top left / 14px 16px no-repeat transparent;
+
+		@include media('<=xs') {
+			margin: 0 15px 10px 0;
+		}
+	}
+}

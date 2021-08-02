@@ -6,3 +6,4 @@ import "../blocks/footer/footer.js";
 import "../blocks/menu-1/menu-1.js";
 import "../blocks/header/header.js";
 import "../blocks/discipline/discipline.js";
+import "../blocks/docs/docs.js";
