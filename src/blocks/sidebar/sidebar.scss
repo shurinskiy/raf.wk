@@ -15,11 +15,11 @@
 	}
 
 	&__item {
-		padding-bottom: 16px;
-		margin-bottom: 16px;
-
+		
 		&:not(:last-child) {
 			border-bottom: 1px solid #D9DADB;
+			padding-bottom: 16px;
+			margin-bottom: 16px;
 		}
 	}
 

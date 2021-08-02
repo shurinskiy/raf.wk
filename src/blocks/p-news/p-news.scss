@@ -12,10 +12,10 @@
 	}
 
 	&__items {
-		width: 78%;
+		width: 75%;
 		display: grid;
-		grid-gap: 24px;
 		grid-template: repeat(2, 330px) / 2fr 1fr;
+		grid-gap: 24px;
 		
 		@include media('<=md') {
 			width: 100%;
@@ -37,7 +37,6 @@
 	}
 	
 	&__item {
-		min-height: 370px;
 
 		&:first-child {
 			grid-area: 1 / 1 / span 2 / 1;
@@ -68,7 +67,7 @@
 	
 	&__side {
 		box-sizing: border-box;
-		width: 22%;
+		width: 25%;
 		
 		@include media('<=md') {
 			width: 100%;
