@@ -91,7 +91,6 @@
     	border-radius: 10px;
 		padding: 24px;
 		display: flex;
-		grid-gap: 24px;
 		margin-bottom: 25px;
 	}
 
@@ -100,6 +99,7 @@
 		overflow: hidden;
 		width: 250px;
 		flex-shrink: 0;
+		margin-right: 24px;
 
 		@include media('<=xs') {
 			width: 180px;

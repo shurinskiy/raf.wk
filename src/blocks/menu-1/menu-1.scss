@@ -31,9 +31,10 @@
 		font-size: 16px;
 		line-height: 1.1;
 		padding: 20px 30px 0;
-		margin-bottom: 0 0 11px 0;
+		margin: 0 0 11px 0;
+		width: auto;
 		border: none;
-		background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') top 15px right 29px / 17px 9px no-repeat transparent;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') top 23px right 30px / 17px 9px no-repeat transparent;
 		
 		> span {
 			display: block;
@@ -75,7 +76,9 @@
 		
 		@include media('<=sm') {
 			display: none;
+			position: static;
 			padding: 25px 0 0;
+			box-shadow: none;
 		}
 	}
 
@@ -97,6 +100,11 @@
 		@include media('>=sm') {
 			width: 160px;
 			border-right: 1px solid #f0f0f0;
+		}
+
+		@include media('<=sm') {
+			width: auto;
+			border: none;
 		}
 	}
 

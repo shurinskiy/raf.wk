@@ -19,7 +19,8 @@
 			e.preventDefault();
 			let $self = $(this);
 			
-			$submenu.removeAttr('style');
+			// $submenu.removeAttr('style');
+			$submenu.slideUp();
 			$links.removeClass('opened');
 			$self
 				.addClass('opened')
