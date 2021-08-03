@@ -4,7 +4,6 @@
 
 	&__inner {
 		display: flex;
-		grid-gap: 24px;
 
 		@include media('<=md') {
 			flex-wrap: wrap;
@@ -16,6 +15,7 @@
 		display: grid;
 		grid-template: repeat(2, 330px) / 2fr 1fr;
 		grid-gap: 24px;
+		margin-bottom: 24px;
 		
 		@include media('<=md') {
 			width: 100%;

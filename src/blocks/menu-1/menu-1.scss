@@ -31,7 +31,8 @@
 		font-size: 16px;
 		line-height: 1.1;
 		padding: 20px 30px 0;
-		margin-bottom: 11px;
+		margin-bottom: 0 0 11px 0;
+		border: none;
 		background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') top 15px right 29px / 17px 9px no-repeat transparent;
 		
 		> span {

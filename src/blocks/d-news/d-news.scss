@@ -21,7 +21,7 @@
 		// grid-auto-rows: 400px;
 		display: flex;
 		flex-flow: row wrap;
-		grid-gap: 24px;
+		margin: 0 -12px;
 		
 		/* @include media('<=md') {
 			grid-template-columns: repeat(3, 1fr);
@@ -38,6 +38,7 @@
 	}
 	
 	&__item {
+		margin: 0 12px 24px;
 		width: calc(100% / 4 - 24px);
 		height: 370px;
 		

@@ -1,6 +1,7 @@
 .tags {
 	$self: &;
 	display: flex;
+	flex-flow: row wrap;
 	margin-bottom: 16px;
 
 	&__item {

@@ -5,9 +5,6 @@
 
 	@include media('<=sm') {
 		box-sizing: border-box;
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
 		position: fixed;
 		height: 100vh;
 		z-index: 11;
@@ -34,8 +31,10 @@
 		}
 
 		@include media('<=sm') {
+			display: block;
 			overflow: auto;
 			padding: 0;
+			height: auto;
 		}
 	}
 

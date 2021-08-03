@@ -15,7 +15,7 @@
 	let $links = $('.menu-1').add('.menu-2__item_haschild');
 
 	$shell.on('click', '.menu-1:not(.opened), .menu-2__item_haschild:not(.opened)', function(e) {
-		if ($shell.css('display') == 'flex') {
+		if ($shell.css('position') == 'fixed') {
 			e.preventDefault();
 			let $self = $(this);
 			
