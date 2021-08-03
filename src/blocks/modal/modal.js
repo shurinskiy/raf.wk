@@ -5,10 +5,10 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 
 	/* Модальное окошко */
-	$(`<div id='${cls}__underlay' class='${cls}'>
+	$(`<div id='${cls}__underlay' class='${cls}' data-scroll-lock-scrollable>
 		<div class='${cls}__body'>
 			<span class='${cls}__close'></span>
-			<div class='${cls}__content' data-scroll-lock-scrollable></div>
+			<div class='${cls}__content'></div>
 		</div>
 	</div>`).appendTo($('body'));
 

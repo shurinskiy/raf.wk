@@ -1,0 +1,32 @@
+.d-cld {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__title {
+
+	}
+
+	&__sort {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	&__select {
+		margin-right: 10px;
+		
+		&.select {
+			height: 32px;
+			border-radius: 6px;
+		}
+	}
+	
+	&__items {
+		display: flex;
+		flex-flow: row wrap;
+		grid-gap: 16px;
+	}
+
+	&__item {
+		width: calc(100% / 5 - 16px);
+	}
+}

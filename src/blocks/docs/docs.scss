@@ -4,18 +4,26 @@
 
 	&__set {
 		box-sizing: border-box;
-		border: 1px solid #ECECEC;
-		border-radius: 10px;
 		overflow: hidden;
 		margin-bottom: 20px;
-		padding: 20px;
 		transition: box-shadow 0.3s ease;
-
+		
 		&.opened {
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 			
 			#{$self}__title::after {
 				background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-black');
+			}
+		}
+		
+		&_tohide {
+			border: 1px solid #ECECEC;
+			border-radius: 10px;
+			padding: 20px;
+
+			#{$self}__block {
+				display: none;
+				padding-top: 25px;
 			}
 		}
 	}
@@ -45,43 +53,12 @@
 		}
 	}
 
-	&__hidden {
-		display: none;
-		padding-top: 25px;
+	
+	&__block {
+
 	}
 
 	&__select {
-		display: inline-flex;
-		box-sizing: border-box;
-		position: relative;
-		font-size: 14px;
-		color: #000;
-		border: 1px solid #D9DADB;
-		border-radius: 25px;
-		margin-bottom: 25px;
-		height: 40px;
-
-		&::after {
-			display: block;
-			content: '';
-			width: 9px;
-			height: 5px;
-			background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-black') center / 9px 5px no-repeat transparent;
-			position: absolute;
-			right: 12px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		
-		select {
-			border-radius: 25px;
-			box-sizing: border-box;
-			appearance: none;
-			outline: none;
-			border: none;
-			padding: 0 30px 0 15px;
-			cursor: pointer;
-		}
 
 	}
 
@@ -175,6 +152,10 @@
 		background: url('#{$images-path}icons-sprite.svg#icon-download-view-grey') top left / 14px 16px no-repeat transparent;
 
 		@include media('<=xs') {
+			margin: 0 15px 10px auto;
+		}
+
+		@include media('<=xxxs') {
 			margin: 0 15px 10px 0;
 		}
 	}

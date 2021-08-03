@@ -22,5 +22,10 @@
 			color: #fff;
 			background-color: #3270CA;
 		}
+
+		&_finished {
+			padding-left: 40px;
+			background: url('#{$images-path}ic-ready.png') center left 15px / auto no-repeat transparent;
+		}
 	}
 }
