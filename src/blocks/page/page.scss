@@ -1,0 +1,50 @@
+.page {
+	$self: &;
+	margin-bottom: 50px;
+
+	&__inner {
+		display: flex;
+		grid-gap: 24px;
+		
+		@include media('<=sm') {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__content {
+		width: 76%;
+		
+		@include media('<=md') {
+			width: 65%;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+		}
+	}
+
+	&__body {
+		border-bottom: 1px solid #D9DADB;
+		margin-bottom: 25px;
+	}
+
+	&__socials {
+
+	}
+
+	&__side {
+		width: 24%;
+		
+		@include media('<=md') {
+			width: 35%;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+		}
+	}
+
+	&__sidebar {
+
+	}
+}
