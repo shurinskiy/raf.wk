@@ -6,7 +6,7 @@
 
 	}
 
-	&__sort {
+	&__filters {
 		display: flex;
 		flex-flow: row wrap;
 	}
@@ -18,6 +18,21 @@
 			height: 32px;
 			border-radius: 6px;
 		}
+	}
+
+	&__download {
+		box-sizing: border-box;
+		display: block;
+		margin-left: auto;
+		border-radius: 6px;
+		color: #fff;
+		text-decoration: none;
+		margin-bottom: 25px;
+		display: flex;
+		align-items: center;
+		padding: 5px 15px 5px 40px;
+		font-size: 14px;
+		background: url('#{$images-path}icons-sprite.svg#icon-cldr-view-white') top 7px left 10px / 17px 17px no-repeat #83D8A4;
 	}
 	
 	&__items {

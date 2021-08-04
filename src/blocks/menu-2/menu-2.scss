@@ -10,7 +10,7 @@
 	@include media('<=sm') {
 		display: block;
 		color: #1B1D28;
-		padding: 0 30px;
+		padding: 11px 30px 0;
 		margin-bottom: 15px;
 	}
 
@@ -32,12 +32,6 @@
 			font-family: "RM", sans-serif;
 			font-size: 16px;
 			padding: 9px 0;
-
-			&.opened {
-				background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-grey');
-				
-				> a { color: #3270CA; }
-			}
 		}
 
 		a {
@@ -67,6 +61,23 @@
 
 			@include media('<=sm') {
 				background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') top 15px right / 17px 9px no-repeat transparent;
+
+				&.opened {
+					background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-grey');
+					background-position: top 25px right 30px;
+					background-color: #F8F8F8;
+					padding-left: 30px;
+					padding-right: 30px;
+					margin-left: -30px;
+					margin-right: -30px;
+
+					> a { color: #3270CA; }
+
+					&:first-child {
+						padding-top: 20px;
+						margin-top: -11px;
+					}
+				}
 			}
 		}
 	}
