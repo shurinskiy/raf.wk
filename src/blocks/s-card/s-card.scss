@@ -1,0 +1,73 @@
+.s-card {
+	$self: &;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	box-sizing: border-box;
+	border: 1px solid #ECECEC;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 24px;
+	transition: box-shadow 0.3s ease;
+
+	&:hover {
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+	}
+
+	&__flag {
+		width: 100px;
+		height: 60px;
+		border-radius: 6px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__num {
+		font-family: "RB", sans-serif;
+		font-size: 36px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	
+	&__title {
+		font-family: "RB", sans-serif;
+		font-size: 18px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	
+	&__descr {
+		margin-bottom: 24px;
+	}
+	
+	&__address {
+		margin-bottom: 24px;
+	}
+	
+	&__contacts {
+		margin-bottom: 24px;
+	}
+	
+	&__contact {
+		a {
+			text-decoration: none;
+			color: #3270CA;
+		}
+	}
+	
+	&__name {
+		font-family: "RB", sans-serif;
+		margin-bottom: 24px;
+	}
+
+	&__more {
+		margin-top: auto;
+	}
+
+}

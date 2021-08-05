@@ -1,0 +1,124 @@
+.details {
+	$self: &;
+
+	&__flag {
+		width: 180px;
+		height: 95px;
+		overflow: hidden;
+		border-radius: 6px;
+		margin-bottom: 20px;
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__title {
+		font-family: "RB", sans-serif;
+		font-size: 36px;
+		line-height: 1.4;
+		margin-bottom: 15px;
+		color: #1B1D28;
+	}
+	
+	&__descr {
+		margin-bottom: 60px;
+	}
+
+	&__card {
+		box-sizing: border-box;
+		border: 1px solid #ECECEC;
+		border-radius: 10px;
+		overflow: hidden;
+		display: flex;
+		padding: 16px;
+		margin-bottom: 24px;
+
+		@include media('<=xxs') {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__card-avatar {
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin-right: 24px;
+		flex-shrink: 0;
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		@include media('<=xxs') {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__card-side {
+
+	}
+
+	&__card-name {
+		font-family: "RB", sans-serif;
+		line-height: 1.6;
+		padding-top: 8px;
+		color: #1B1D28;
+	}
+
+	&__card-position {
+		margin-bottom: 20px;
+		color: #595B62;
+
+		@include media('<=xxs') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__card-contacts {
+
+	}
+
+	&__card-contact {
+		a {
+			text-decoration: none;
+			color: #3270CA;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: #3270CA;
+		}
+
+		@include media('<=sm') {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__contact-address {
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		padding-left: 32px;
+		line-height: 1.5;
+		background: url('#{$images-path}icons-sprite.svg#icon-geo-view-grey') left top / 18px 22px no-repeat transparent;
+		margin-right: 40px;
+	}
+	
+	&__contact-phones {
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		padding-left: 32px;
+		line-height: 1.5;
+		background: url('#{$images-path}icons-sprite.svg#icon-phone-view-grey') left top / 20px 20px no-repeat transparent;
+	}
+}

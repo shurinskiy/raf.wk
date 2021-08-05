@@ -2,26 +2,20 @@
 	$self: &;
 	margin-bottom: 100px;
 
-	&__title {
-		font-family: "RB", sans-serif;
-		font-size: 20px;
-		line-height: 1.2;
-		margin-bottom: 30px;
+	&__subtitle {
+		padding-top: 20px !important;
 	}
 	
-	&__items {
+	&__item {
 		box-sizing: border-box;
 		border: 1px solid #ECECEC;
 		border-radius: 10px;
-		padding: 24px;
-	}
-
-	&__item {
 		display: flex;
 		align-items: center;
+		padding: 16px;
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: 10px;
 		}
 		
 		@include media('<=md') {
@@ -42,15 +36,29 @@
 		@include media('<=md') {
 			width: 100%;
 			margin: 0 0 3px 0;
+			order: -1;
 		}
 	}
 
+	&__avatar {
+		display: block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		overflow: hidden;
+		flex-shrink: 0;
+		background: url('#{$images-path}icons-sprite.svg#icon-logo-view-white') center / 26px 25px no-repeat #E8E8E8;
+		margin-right: 15px;
+	}
+
 	&__name {
-		margin: 0 50px 0 20px;
+		margin: 0 50px 0 0;
+		min-width: 250px;
 		
 		@include media('<=md') {
 			width: 100%;
 			margin: 0 0 20px 0;
+			order: -1;
 		}
 	}
 

@@ -26,6 +26,17 @@
 	&_small {
 		font-size: 15px;
 		margin: 0;
-		padding: 0 0 20px 0;
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	&_subtitle {
+		color: #1B1D28;
+		text-transform: none;
+		line-height: 1.4;
+		font-size: 20px;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 30px;
 	}
 }

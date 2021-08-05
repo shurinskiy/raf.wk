@@ -1,23 +1,29 @@
 .fdr {
 	$self: &;
 
-	&__block {
-		margin-bottom: 30px;
-	}
+	&_details {
+		#{$self}__items {
+			grid-auto-rows: minmax(340px, auto);
+		}
 
+		#{$self}__item {
+			.f-card__contacts {
+				margin-bottom: 0;
+			}
+		}
+	}
+	
 	&__title {
-		font-family: "RB", sans-serif;
-		font-size: 20px;
-		line-height: 1.2;
-		margin-bottom: 30px;
+		
 	}
-
+	
 	&__items {
 		display: grid;
 		// grid-template-columns: repeat(4, 1fr);
 		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 		grid-gap: 16px;
 		grid-auto-rows: minmax(400px, auto);
+		margin-bottom: 30px;
 	}
 
 	&__item {

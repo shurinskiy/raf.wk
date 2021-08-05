@@ -60,14 +60,32 @@
 
 	&__dot {
 		display: block;
-		width: 8px;
-		height: 8px;
+		width: 20px;
+		height: 20px;
 		margin: 0 10px;
-		background-color: rgba(255, 255, 255, 0.5);
-		border-radius: 50%;
+		position: relative;
+		
+		&::before {
+			box-sizing: border-box;
+			display: block;
+			content: '';
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: url('#{$images-path}icons-sprite.svg#icon-bullet-view-white') center / 8px 8px no-repeat transparent;
+			opacity: 0.5;
+		}
 
 		&_active {
-			background-color: #fff;
+
+			&::before {
+				opacity: 1;
+				border: 2px solid rgba(255, 255, 255, 0.5);
+			}
 		}
 	}
 }

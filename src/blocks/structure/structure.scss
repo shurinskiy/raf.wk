@@ -1,0 +1,15 @@
+.structure {
+	$self: &;
+	margin-bottom: 100px;
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+		grid-auto-rows: minmax(600px, auto);
+		grid-gap: 16px;
+	}
+
+	&__item {
+
+	}
+}
