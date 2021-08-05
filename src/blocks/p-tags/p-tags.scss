@@ -16,6 +16,7 @@
 		color: inherit;
 		font-size: 14px;
 		line-height: 1.3;
+		transition: border-color 0.3s ease;
 
 		&:not(:last-child) {
 			margin-right: 10px;
@@ -24,11 +25,16 @@
 		&.active {
 			color: #fff;
 			background-color: #3270CA;
+			border-color: #3270CA;
 		}
 
 		&_finished {
 			padding-left: 40px;
 			background: url('#{$images-path}ic-ready.png') center left 15px / auto no-repeat transparent;
+		}
+
+		&:hover {
+			border-color: #3270CA;
 		}
 	}
 }

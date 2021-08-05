@@ -13,6 +13,7 @@
 		color: #595B62;
 		padding: 10px 10px 10px 44px;
 		margin: 0 12px 14px 0;
+		transition: border-color 0.3s ease;
 
 		&_license { background: url('#{$images-path}icons-sprite.svg#icon-license-view-green') center left 10px / 24px 24px no-repeat transparent; }
 
@@ -25,5 +26,9 @@
 		&_membership { background: url('#{$images-path}icons-sprite.svg#icon-membership-view-green') center left 10px / 20px 20px no-repeat transparent; }
 
 		&_prize { background: url('#{$images-path}icons-sprite.svg#icon-prize-view-green') center left 10px / 24px 24px no-repeat transparent; }
+
+		&:hover {
+			border-color: #3270CA;
+		}
 	}
 }

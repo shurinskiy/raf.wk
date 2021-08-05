@@ -314,7 +314,7 @@
 			<li class="menu-2__item"><a href="./calendars.html">Календари</a></li>
 			<li class="menu-2__item"><a href="./contacts.html">Контакты</a></li>
 		</ul>
-		<a class="navi__fia" href="./">FIA Motorsport Games 2021</a>
+		<a class="navi__fia" href="./" data-modal="someform">FIA Motorsport Games 2021</a>
 		<div class="navi__socials socials">
 			<a href="./" class="socials__item socials__item_fb"></a>
 			<a href="./" class="socials__item socials__item_inst"></a>
@@ -369,7 +369,7 @@
 			<div class="d-cld__select select">
 				<select><option value="1">по дате</option></select>
 			</div>
-			<a class="d-cld__download" href="./">Скачать календарь с примененными фильтрами</a>
+			<a class="d-cld__download" href="./">Скачать календарь <span>с примененными фильтрами</span></a>
 		</div>
 		<div class="d-cld__items">
 			<div class="d-cld__item d-cld__item_wide c-card c-card_now">
@@ -639,7 +639,28 @@
 			<button class="footer__scroll-top">Наверх</button>
 		</div>
 	</div>
-</footer> 
+</footer>
+
+<div class="modal__hidden">
+	<div id="someform">
+		<form class="form" action="./">
+			<h2 class="form__title">Заголовок и описание формы</h2>
+			<div class="form__field"><input type="text"></div>
+			<div class="form__area"><textarea name="" ></textarea></div>
+			<div class="form__select select">
+				<select name="">
+					<option value="1">По региону</option>
+					<option value="1">По цвету</option>
+					<option value="3">По зодиаку</option>
+				</select>
+			</div>
+			<label class="form__check"><input type="checkbox" name="" checked><span>Чекбокс</span></label>
+			<label class="form__check"><input type="checkbox" name=""><span>Чекбокс</span></label>
+			<input class="form__submit button button_green" type="submit" value="Связаться">
+		</form>
+	</div>
+</div>
+
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
 <script src="common.js"></script> 
 </body> 

@@ -51,7 +51,7 @@ $breakpoints: (
 @import "../blocks/**/*.scss";
 
 // Include breakpoints badge
-body { @include screen-media(); }
+// body { @include screen-media(); }
 
 body, html {
 	box-sizing: border-box;

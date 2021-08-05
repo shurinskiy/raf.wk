@@ -33,4 +33,10 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 		}
 	});
 
+	$('.header__search-inp').on('focus', function(e) {
+		$(this).parent('.header__search').css({'border-color':'#3270CA'});
+	}).on('focusout', function(e) {
+		$(this).parent('.header__search').removeAttr('style');
+	})
+
 })();

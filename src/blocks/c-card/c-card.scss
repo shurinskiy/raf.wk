@@ -25,7 +25,7 @@
 	&_canceled {
 		border: 1px solid #FFDFDF;
 		background: #FFF5F5;
-
+		
 		#{$self}__pending {
 			background-color: #FFDFDF;
 		}
@@ -33,10 +33,20 @@
 	
 	&_finished {
 		background: #F8F8F8;
-
+		
 		#{$self}__pending {
 			padding-right: 40px;
 			background: url('#{$images-path}ic-ready.png') center right 15px / auto no-repeat #E7E7E7;
+		}
+	}
+	
+	&_moved {
+		border: 1px solid #6a9deb;
+		background: #F0F4F9;
+
+		#{$self}__pending {
+			padding-right: 40px;
+			background: url('#{$images-path}ic-moved.png') center right 15px / auto no-repeat #DCE5EE;
 		}
 	}
 

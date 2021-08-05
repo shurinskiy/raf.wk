@@ -1,0 +1,28 @@
+.search {
+	$self: &;
+	margin-bottom: 80px;
+
+	&__info {
+		margin-bottom: 25px;
+	}
+
+	&__item {
+		margin-bottom: 25px;
+	}
+
+	&__item-title {
+		display: block;
+		font-family: "RM", sans-serif;
+		text-decoration: none;
+		color: #3270CA;
+		margin-bottom: 15px;
+	}
+	
+	&__clipped {
+		
+	}
+	
+	&__matched {
+		font-family: "RB", sans-serif;
+	}
+}

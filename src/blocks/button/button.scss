@@ -10,10 +10,18 @@
 	color: #fff;
 	font-size: 14px;
 	height: 40px;
+	transition: background-color 0.3s ease;
 
+	&:disabled {
+		background-color: #DADADA;
+	}
 
 	&_green {
 		background-color: #83D8A4;
+		
+		&:hover {
+			background-color: #9FE7BB;
+		}
 	}
 
 	&_alarm {
@@ -23,12 +31,20 @@
 		letter-spacing: 1px;
 		font-size: 15px;
 		height: 36px;
+
+		&:hover {
+			background-color: #fa675f;
+		}
 	}
 
 	&_login {
 		padding-left: 42px;
 		background: url('#{$images-path}icons-sprite.svg#icon-user-view-white') center left 14px / 16px 18px no-repeat #3270CA;
 		justify-content: flex-start;
+
+		&:hover {
+			background-color: #2F77E0;
+		}
 	}
 
 	&_toggle {
@@ -38,6 +54,22 @@
 		&.opened {
 			background-image: url('#{$images-path}icons-sprite.svg#icon-close-view-white');
 			background-size: 15px 15px;
+		}
+
+		&:hover {
+			background-color: #2F77E0;
+		}
+	}
+
+	&_more {
+		background-color: #F7F7F7;
+		color: #14161E;
+		margin: 0 auto 50px;
+		max-width: 1200px;
+		width: calc(100% - 40px);
+	
+		&:hover {
+			background-color: #EEEEEE;
 		}
 	}
 }

@@ -2,7 +2,6 @@
 	$self: &;
 
 	@include media('>=sm') {
-		width: 50px;
 		height: 100%;
 		border-right: 1px solid #363746;
 		margin-right: 15px;
@@ -13,14 +12,21 @@
 			box-sizing: border-box;
 			display: block;
 			content: '';
-			width: 100%;
+			width: 56px;
 			height: 100%;
-			background: url('#{$images-path}icons-sprite.svg#icon-menu-view-white') center left / 18px 14px no-repeat transparent;
+			background: url('#{$images-path}icons-sprite.svg#icon-hamburger-view-white') center / 18px 14px no-repeat transparent;
 			cursor: pointer;
+			border-radius: 5px 5px 0 0;
+			margin-right: 15px;
+			
 		}
 		
 		&:hover {
-			&::before { background-image: url('#{$images-path}icons-sprite.svg#icon-menu-view-blue'); }
+			&::before { 
+				background-image: url('#{$images-path}icons-sprite.svg#icon-hamburger-view-blue'); 
+				background-color: #fff;
+				transition: background-color 0.4s ease;
+			}
 			
 			#{$self}__submenu { display: block; }
 		}
@@ -34,10 +40,15 @@
 		width: auto;
 		border: none;
 		background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-grey') top 23px right 30px / 17px 9px no-repeat transparent;
+		transition: color 0.3s ease;
 		
 		> span {
 			display: block;
 			cursor: pointer;
+		}
+
+		&:hover {
+			color: #3270CA;
 		}
 		
 		&.opened {
@@ -126,6 +137,7 @@
 			line-height: 1.2;
 			text-decoration: none;
 			color: #1B1D28;
+			transition: color 0.3s ease;
 
 			&:hover { color: #3270CA; }
 		}
@@ -227,7 +239,6 @@
 		color: #C0C0C0;
 		font-size: 14px;
 		padding-left: 22px;
-
 		background: url('#{$images-path}icons-sprite.svg#icon-geo-view-grey') center left / 14px 18px no-repeat transparent;
 	}
 
@@ -235,5 +246,4 @@
 		font-family: "RM", sans-serif;
 		font-size: 16px;
 	}
-
 }
