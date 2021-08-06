@@ -36,6 +36,21 @@
 			flex-wrap: nowrap;
 			overflow: auto;
 		}
+
+		&_tohide {
+
+			#{$self}__item {
+				&:nth-last-child(-n + 3) {
+					display: none;
+				}
+				
+				@include media('<=md') {
+					&:nth-last-child(-n + 5) {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 
 	&__item {
@@ -47,17 +62,9 @@
 		transition: box-shadow 0.3s ease;
 		max-width: 150px;
 		width: calc(100% / 8);
-
-		&:nth-last-child(-n + 3) {
-			display: none;
-		}
 		
 		@include media('<=md') {
 			width: calc(100% / 6);
-
-			&:nth-last-child(-n + 5) {
-				display: none;
-			}
 		}
 		
 		@include media('<=sm') {
