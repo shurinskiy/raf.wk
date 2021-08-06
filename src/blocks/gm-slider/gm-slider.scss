@@ -64,6 +64,21 @@
 		height: 20px;
 		margin: 0 10px;
 		position: relative;
+
+		> svg {
+			display: none;
+			position: relative;
+			z-index: 1;
+			stroke: #fff;
+			stroke-width: 2px;
+			fill-opacity: 0;
+			stroke-dasharray: 56;
+			stroke-dashoffset: 57;
+			animation: stroke linear forwards;
+			@keyframes stroke {
+				to { stroke-dashoffset: 0; }
+			}
+		}
 		
 		&::before {
 			box-sizing: border-box;
@@ -81,7 +96,8 @@
 		}
 
 		&_active {
-
+			> svg { display: block; }
+	
 			&::before {
 				opacity: 1;
 				border: 2px solid rgba(255, 255, 255, 0.5);
