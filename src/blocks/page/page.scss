@@ -4,7 +4,7 @@
 
 	&__inner {
 		display: flex;
-		grid-gap: 24px;
+		margin: 0 -16px;
 		
 		@include media('<=sm') {
 			flex-wrap: wrap;
@@ -12,14 +12,16 @@
 	}
 
 	&__content {
-		width: 76%;
+		box-sizing: border-box;
+		width: calc(100% / 4*3 - 24px);
+		margin: 0 16px 24px;
 		
 		@include media('<=md') {
-			width: 65%;
+			width: calc(100% / 5*3 - 24px);
 		}
 		
 		@include media('<=sm') {
-			width: 100%;
+			width: calc(100% - 24px);
 		}
 	}
 
@@ -33,14 +35,16 @@
 	}
 
 	&__side {
-		width: 24%;
+		box-sizing: border-box;
+		width: calc(100% / 4 - 24px);
+		margin: 0 16px 24px;
 		
 		@include media('<=md') {
-			width: 35%;
+			width: calc(100% / 5*2 - 24px);
 		}
 		
 		@include media('<=sm') {
-			width: 100%;
+			width: calc(100% - 24px);
 		}
 	}
 
