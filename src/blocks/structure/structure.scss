@@ -7,6 +7,10 @@
 		grid-template-columns: repeat(auto-fit, minmax(270px, auto));
 		grid-auto-rows: minmax(600px, auto);
 		grid-gap: 16px;
+
+		@include media('<=sm') {
+			grid-auto-rows: auto;
+		}
 	}
 
 	&__item {

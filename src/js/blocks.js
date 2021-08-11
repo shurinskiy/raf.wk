@@ -8,3 +8,4 @@ import "../blocks/header/header.js";
 import "../blocks/discipline/discipline.js";
 import "../blocks/docs/docs.js";
 import "../blocks/modal/modal.js";
+import "../blocks/select/select.js";

@@ -14,17 +14,29 @@
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 	}
 
+	&__top {
+		@include media('<=sm') {
+			display: flex;
+			align-items: center;
+		}
+	}
+
 	&__flag {
 		width: 100px;
 		height: 60px;
 		border-radius: 6px;
 		overflow: hidden;
-		margin-bottom: 20px;
+		margin: 0 20px 20px 0;
 		
 		img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
+		}
+
+		@include media('<=sm') {
+			width: 70px;
+			height: 40px;
 		}
 	}
 	
@@ -44,10 +56,18 @@
 	
 	&__descr {
 		margin-bottom: 24px;
+
+		@include media('<=sm') {
+			display: none;
+		}
 	}
 	
 	&__address {
 		margin-bottom: 24px;
+
+		@include media('<=sm') {
+			display: none;
+		}
 	}
 	
 	&__contacts {

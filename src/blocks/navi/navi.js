@@ -14,10 +14,12 @@
 	let $submenu = $shell.find('[class$=__submenu]');
 	let $links = $('.menu-1').add('.menu-2__item_haschild');
 
-	$shell.on('click', '.menu-1, .menu-2__item_haschild', function(e) {
+	$shell.on('click', '.menu-1 > span, .menu-2__item_haschild > span', function(e) {
 		if ($shell.css('position') == 'fixed') {
+			e.stopPropagation();
 			e.preventDefault();
-			let $self = $(this);
+
+			let $self = $(this).parent();
 			let $block = $self.find('[class$=__submenu]');
 
 			$links.not($self).removeClass('opened');
