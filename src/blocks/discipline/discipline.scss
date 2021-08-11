@@ -1,6 +1,6 @@
 .discipline {
 	$self: &;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 
 	&__top {
 		display: flex;
@@ -31,6 +31,7 @@
 		// grid-template: auto / repeat(auto-fit, minmax(150px, auto));
 		display: flex;
 		flex-flow: row wrap;
+		padding-bottom: 15px;
 
 		@include media('<=sm') {
 			flex-wrap: nowrap;

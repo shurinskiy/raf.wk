@@ -1,6 +1,9 @@
 @import "lib/additional.scss"; 
 @include reset(); 
 
+// Include breakpoints badge
+body { @include screen-media(); }
+
 // Import media-query helper
 @import "../../node_modules/include-media/dist/_include-media.scss";
 
@@ -9,7 +12,7 @@ $breakpoints: (
 	'xxs': 480px,
 	'xs': 640px,
 	'sm': 780px,
-	'md': 990px,
+	'md': 960px,
 	'lg': 1100px,
 	'xlg': 1280px,
 	'xxlg': 1440px,
@@ -49,9 +52,6 @@ $breakpoints: (
 
 // Import BEM blocks scss
 @import "../blocks/**/*.scss";
-
-// Include breakpoints badge
-// body { @include screen-media(); }
 
 body, html {
 	box-sizing: border-box;

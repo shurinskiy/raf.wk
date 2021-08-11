@@ -54,6 +54,12 @@
 		
 		@include media('<=md') {
 			width: calc(100% + 200px);
+			padding: 16px;
+			margin: 0 -16px;
+		}
+		
+		@include media('<=xs') {
+			width: calc(100% + 100px);
 		}
 		
 		@include media('<=xxxs') {

@@ -36,42 +36,29 @@
 <section class="fdr fdr_details">
 	<div class="container">
 		<div class="fdr__items">
-			<div class="fdr__item f-card f-card_nomodal">
-				<div class="f-card__avatar"><img src="" alt=""></div>
-				<div class="f-card__name">КИРЬЯНОВ Виктор Николаевич</div>
-				<div class="f-card__position">Президент РАФ</div>
-				<div class="f-card__contacts">
-					<div class="f-card__contact">Моб. тел. <a href="tel:8-928-461-59-05">8-928-461-59-05</a></div>
-					<div class="f-card__contact">E-mail: <a href="mailto:bogus.adam@mail.ru">bogus.adam@mail.ru</a></div>
-				</div>
-			</div>
-			<div class="fdr__item f-card f-card_nomodal">
-				<div class="f-card__avatar"><img src="" alt=""></div>
-				<div class="f-card__name">СКРЫЛЬ Василий Иванович</div>
-				<div class="f-card__position">Вице-президент по спорту</div>
-				<div class="f-card__contacts">
-					<div class="f-card__contact">Моб. тел. <a href="tel:8-928-461-59-05">8-928-461-59-05</a></div>
-					<div class="f-card__contact">E-mail: <a href="mailto:bogus.adam@mail.ru">bogus.adam@mail.ru</a></div>
-				</div>
-			</div>
-			<div class="fdr__item f-card f-card_nomodal">
-				<div class="f-card__avatar"><img src="" alt=""></div>
-				<div class="f-card__name">УШАКОВ Сергей Викторович</div>
-				<div class="f-card__position">Вице-президент</div>
-				<div class="f-card__contacts">
-					<div class="f-card__contact">Моб. тел. <a href="tel:8-928-461-59-05">8-928-461-59-05</a></div>
-					<div class="f-card__contact">E-mail: <a href="mailto:bogus.adam@mail.ru">bogus.adam@mail.ru</a></div>
-				</div>
-			</div>
-			<div class="fdr__item f-card f-card_nomodal">
-				<div class="f-card__avatar"><img src="" alt=""></div>
-				<div class="f-card__name">ИВАНОВ Сергей Владимирович</div>
-				<div class="f-card__position">Исполнительный директор</div>
-				<div class="f-card__contacts">
-					<div class="f-card__contact">Моб. тел. <a href="tel:8-928-461-59-05">8-928-461-59-05</a></div>
-					<div class="f-card__contact">E-mail: <a href="mailto:bogus.adam@mail.ru">bogus.adam@mail.ru</a></div>
-				</div>
-			</div>
+			@@include("_f-card.html", {
+				"cls":"fdr__item f-card_nomodal",
+				"name":"КИРЬЯНОВ Виктор Николаевич",
+				"pos":"Президент РАФ"
+			})
+
+			@@include("_f-card.html", {
+				"cls":"fdr__item f-card_nomodal",
+				"name":"СКРЫЛЬ Василий Иванович",
+				"pos":"Вице-президент по спорту"
+			})
+
+			@@include("_f-card.html", {
+				"cls":"fdr__item f-card_nomodal",
+				"name":"УШАКОВ Сергей Викторович",
+				"pos":"Вице-президент"
+			})
+
+			@@include("_f-card.html", {
+				"cls":"fdr__item f-card_nomodal",
+				"name":"ИВАНОВ Сергей Владимирович",
+				"pos":"Исполнительный директор"
+			})
 		</div>
 	</div>
 </section>

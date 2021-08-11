@@ -25,8 +25,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 	$(window).on('click', function(e) {
 		if($shell.hasClass('opened') && !e.target.closest('.navi')) {
 			e.preventDefault();
-			$toggle.toggleClass('opened');
-			$shell.toggleClass('opened');
+			$toggle.removeClass('opened');
+			$shell.removeClass('opened');
 			$submenu.removeAttr('style');
 			$links.removeClass('opened');
 			enablePageScroll();

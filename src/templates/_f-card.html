@@ -1,0 +1,13 @@
+<div class="f-card @@if(this.cls){@@cls}" id="@@if(this.id){@@id}">
+	<div class="f-card__image"><img src="@@if(this.img){./images/stuff/@@img}" alt=""></div>
+	<div class="f-card__top">
+		<div class="f-card__avatar" data-modal="@@if(this.id){@@id}"><img src="@@if(this.avt){./images/stuff/@@avt}" alt=""></div>
+		<div class="f-card__name"><span>@@name</span><span>@@pos</span></div>
+	</div>
+	<div class="f-card__text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corporis, consequatur cum quas totam illum doloremque error. Obcaecati molestias doloremque, fugit cupiditate praesentium blanditiis harum illum asperiores perspiciatis alias veniam.</p></div>
+	<div class="f-card__contacts">
+		<div class="f-card__contact">Моб. тел. <a href="tel:8-928-461-59-05">8-928-461-59-05</a></div>
+		<div class="f-card__contact">E-mail: <a href="mailto:bogus.adam@mail.ru">bogus.adam@mail.ru</a></div>
+	</div>
+	@@if(this.id){<a class="f-card__btn button button_green" href="./">Связаться</a>}
+</div>

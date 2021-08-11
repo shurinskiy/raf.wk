@@ -7,7 +7,6 @@
 	display: flex;
 	flex-flow: column nowrap;
 	padding: 16px;
-	min-height: 350px;
 	transition: box-shadow 0.3s ease;
 
 	&:hover {
@@ -15,7 +14,7 @@
 	}
 
 	&_soon {
-		
+		background-color: #fff;
 	}
 	
 	&_now {
@@ -76,7 +75,7 @@
 		font-size: 12px;
 		line-height: 1.2;
 		background: #F5F8FF;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	&__downloads {

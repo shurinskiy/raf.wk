@@ -4,6 +4,10 @@
 	&_details {
 		#{$self}__items {
 			grid-auto-rows: minmax(340px, auto);
+
+			@include media('<=sm') {
+				grid-auto-rows: auto;
+			}
 		}
 
 		#{$self}__item {
@@ -24,6 +28,10 @@
 		grid-gap: 16px;
 		grid-auto-rows: minmax(400px, auto);
 		margin-bottom: 30px;
+
+		@include media('<=md') {
+			grid-auto-rows: auto;
+		}
 	}
 
 	&__item {

@@ -4,6 +4,7 @@
 
 	&__inner {
 		display: flex;
+		margin: 0 -12px;
 
 		@include media('<=md') {
 			flex-wrap: wrap;
@@ -12,6 +13,7 @@
 
 	&__items {
 		width: 75%;
+		margin: 0 12px 24px;
 		display: grid;
 		grid-template: repeat(2, 330px) / 2fr 1fr;
 		grid-gap: 24px;
@@ -68,6 +70,7 @@
 	&__side {
 		box-sizing: border-box;
 		width: 25%;
+		margin: 0 12px 24px;
 		
 		@include media('<=md') {
 			width: 100%;
